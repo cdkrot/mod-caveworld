@@ -1,5 +1,5 @@
 Hello once again.
-This guide will walk you throught the beginning og the work with mod.
+This guide will walk you throught the beginning of the work with mod.
 
 Installation
 ============
@@ -43,7 +43,7 @@ Contacting: ways:
 
 I want help in developing!:
 =============================
-See special page "Developer-manual.md"
+* See special page "Developer-manual.md"
 
 That is all. Contact me if you have questions.
 
