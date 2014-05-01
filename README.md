@@ -7,6 +7,9 @@ Idea by epoN.
 * cdkrot: main contibutor  
 * Want to become a contibutor? See developers manual.  
 
+## Downloads:
+See: http://yadi.sk/d/0aiNeh0kNq4QX
+
 ## Latest News  
 01 may 14 First public release 0.1.0  
 
