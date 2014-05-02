@@ -8,5 +8,5 @@ import net.minecraft.world.chunk.IChunkProvider;
 
 public interface IChunkGenerator extends IGenerator
 {
-	void generate(IChunkBlockControl w, long chunk_x, long chunk_z);
+	void generate(IChunkBlockControl w, int chunk_x, int chunk_z);
 }

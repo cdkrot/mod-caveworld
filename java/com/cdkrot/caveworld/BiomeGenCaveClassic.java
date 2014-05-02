@@ -4,7 +4,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.world.biome.BiomeGenBase;
 
 /**
- * Controls enemies and animals spawned in the biome.
+ * Cave Biome.
  * @author cdkrot
  */
 public class BiomeGenCaveClassic extends BiomeGenBase
@@ -18,7 +18,10 @@ public class BiomeGenCaveClassic extends BiomeGenBase
 		this.rootHeight = 10;
 		this.heightVariation = 0;
 		
-		this.theBiomeDecorator.generateLakes = false;
+		this.theBiomeDecorator.generateLakes=false; //we gen lakes ourselves
+		this.theBiomeDecorator.grassPerChunk=120;
+		this.theBiomeDecorator.treesPerChunk=10;
+		this.theBiomeDecorator.bigMushroomsPerChunk =1;
 	}
 
 }

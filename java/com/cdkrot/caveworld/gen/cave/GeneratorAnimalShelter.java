@@ -28,7 +28,7 @@ public class GeneratorAnimalShelter implements IChunkGenerator
 	public void initSEED(long s) {seed=s;}
 
 	@Override
-	public void generate(IChunkBlockControl w, long chunk_x, long chunk_z)
+	public void generate(IChunkBlockControl w, int chunk_x, int chunk_z)
 	{
 		Random rand = new Random(1299709*chunk_x+1020379*chunk_z+seed);
 		int tries = rand.nextInt(4); //now of tries to make.

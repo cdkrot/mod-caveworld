@@ -17,7 +17,7 @@ public class GeneratorFoodChests extends AbstractChunkGenerator implements IChun
 	private static long seed;
 		
 	@Override
-	public void generate(IChunkBlockControl w, long chunk_x, long chunk_z)
+	public void generate(IChunkBlockControl w, int chunk_x, int chunk_z)
 	{
 		Random rand = makeChunkRandom(chunk_x, chunk_z);
 		int tries = 6 + rand.nextInt(8);

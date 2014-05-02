@@ -22,7 +22,7 @@ public class GeneratorGlowStone implements IChunkGenerator
 	public void initSEED(long s) {seed=s;}
 	
 	@Override
-	public void generate(IChunkBlockControl w, long chunk_x, long chunk_z)
+	public void generate(IChunkBlockControl w, int chunk_x, int chunk_z)
 	{
 		Random rand = new Random(1299709*chunk_x+1020379*chunk_z+seed);
 		int tries = 8 + rand.nextInt(16);
