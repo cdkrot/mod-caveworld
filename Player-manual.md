@@ -28,7 +28,7 @@ In-game:
 
 Updating:
 ==========
-* Mode is in development now, it may update often, but be careful, when updating world generation may change. Artefacts on borders of old generated places and new can be noticeable.
+* Mod is in development now, it may update often, but be careful, when updating world generation may change. Artefacts on borders of old generated places and new can be noticeable.
 
 Contacting: reasons:
 ======================
