@@ -14,6 +14,7 @@ CodeStyle:
 * Tabs, not spaces.
 * Braces for class, method, if, for, while bodies begin on next line.
 * Braces should be omitted in  if, for, while statements, consisting of one instruction.
+* @Override annotations required!
 * BIG_LETTERS for static final class members.
 * small_letters or CamelCase or thisStyle for class members or local variables.
 
