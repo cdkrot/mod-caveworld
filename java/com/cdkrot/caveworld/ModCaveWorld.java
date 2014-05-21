@@ -21,17 +21,18 @@ import org.apache.logging.log4j.Logger;
  * @author cdkrot
  * 25.04.14
  */
-@Mod(modid = ModCaveWorld.modid, version = ModCaveWorld.version, name="Extra world generators")
+@Mod(modid = ModCaveWorld.modid, version = ModCaveWorld.version, name="cave world generator")
 public class ModCaveWorld
 {
 	public static final String modid = "cdkrot.caveworld";
-	public static final String version = "0.0.0";
+	public static final String version = "0.5.0";
 
 	@Mod.Instance(modid)
 	public static ModCaveWorld instance;
 	public Logger modLogger;
 	public WorldType caveWorldType;
 	public BiomeGenBase BiomeGenCaveClassic = new BiomeGenCaveClassic(53);//for example 53.
+	public BiomeGenBase BiomeGenCaveMushroom = new BiomeGenCaveMycelium(54);
 	
 	
 	@Mod.EventHandler

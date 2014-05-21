@@ -1,6 +1,8 @@
 package com.cdkrot.caveworld.gen.cave;
 
 
+import com.cdkrot.caveworld.ModCaveWorld;
+
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.gen.layer.GenLayer;
 import net.minecraft.world.gen.layer.GenLayerIsland;
@@ -20,7 +22,7 @@ public class GenLayerBiomeCave extends GenLayer
 	{
 		int b[] = core.getInts(p1, p2, p3, p4);
 		for (int i=0; i<b.length; i++)
-			b[i]= ((b[i]==0)?BiomeGenBase.plains.biomeID:BiomeGenBase.mushroomIsland.biomeID);
+			b[i]= ((b[i]==0)?ModCaveWorld.instance.BiomeGenCaveClassic.biomeID:ModCaveWorld.instance.BiomeGenCaveMushroom.biomeID);
 		return b;
 	}
 

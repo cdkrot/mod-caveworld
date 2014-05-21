@@ -2,10 +2,10 @@
 {
   "modid": "cdkrot.caveworld",
   "name": "Cave world Mod",
-  "description": "Adds a cave generator to Minecraft!",
+  "description": "Adds a cave generator to Minecraft! There is a lot of space for improvements, but it's ready to use!",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "",
+  "url": https://github.com/cdkrot/mod-caveworld",
   "updateUrl": "",
   "authors": ["cdkrot"],
   "credits": "Idea by epoN, created by cdkrot.",

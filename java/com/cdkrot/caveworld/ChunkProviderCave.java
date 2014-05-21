@@ -90,10 +90,10 @@ public class ChunkProviderCave implements IChunkProvider {
 		this.worldObj = world;
 		this.random = new Random(seed);
 		
+		addCaveWorldGen(new GeneratorCavePostProduction());
 		addCaveWorldGen(new GeneratorFoodChests());
 		addCaveWorldGen(new GeneratorGlowStone());
 		addCaveWorldGen(new GeneratorAnimalShelter());
-		addCaveWorldGen(new GeneratorCavePostProduction());
 		
 		structureGenerators.add(new MapGenStronghold());
 		structureGenerators.add(new MapGenScatteredFeature());
@@ -244,7 +244,6 @@ public class ChunkProviderCave implements IChunkProvider {
             GeneratorDungeons.generate(this.worldObj, this.random, l1, i2, j2);
         }
         
-        biomegenbase.decorate(this.worldObj, this.random, k, l);
         
         ChunkBlockControl ChunkControl = new ChunkBlockControl();
         ChunkControl.initChunk(prov.provideChunk(x, z));
@@ -252,6 +251,8 @@ public class ChunkProviderCave implements IChunkProvider {
         {
         	cave_gen.generate(ChunkControl, x, z);
         }
+        
+        biomegenbase.decorate(this.worldObj, this.random, k, l);
         SpawnerAnimals.performWorldGenSpawning(this.worldObj, biomegenbase, k + 8, l + 8, 16, 16, this.random);
         k += 8;
         l += 8;

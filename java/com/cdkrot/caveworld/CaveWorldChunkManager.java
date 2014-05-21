@@ -20,7 +20,9 @@ public class CaveWorldChunkManager extends WorldChunkManager
 		world.provider.setSpawnPoint(8, 243, 8);
 		world.provider.hasNoSky=true;
 		this.getBiomesToSpawnIn().clear();
-		this.getBiomesToSpawnIn().add(BiomeGenBase.plains);
+		this.getBiomesToSpawnIn().add(ModCaveWorld.instance.BiomeGenCaveClassic);
+		this.getBiomesToSpawnIn().add(ModCaveWorld.instance.BiomeGenCaveMushroom);
+
 	}
 		
 	

@@ -2,6 +2,8 @@ package com.cdkrot.caveworld;
 
 import com.cdkrot.caveworld.gen.cave.GenLayerBiomeCave;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldType;
 import net.minecraft.world.biome.WorldChunkManager;
@@ -14,7 +16,8 @@ import net.minecraft.world.gen.layer.GenLayerZoom;
 public class CaveWorldType extends WorldType
 {
 
-	public CaveWorldType(){
+	public CaveWorldType()
+	{
 		super("cdkrot-caveworld");
 	}
 
@@ -55,7 +58,13 @@ public class CaveWorldType extends WorldType
     }
     public int getSpawnFuzz()
     {
-        return 0;
+        return 6;
+    }
+    
+    @SideOnly(Side.CLIENT)
+    public boolean showWorldInfoNotice()
+    {
+        return true;
     }
 
 }

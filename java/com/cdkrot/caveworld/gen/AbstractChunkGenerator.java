@@ -6,7 +6,7 @@ public abstract class AbstractChunkGenerator implements IChunkGenerator
 {
 	protected long seed;
 	
-	public final void initSEED(long s)
+	public void initSEED(long s)
 	{
 		seed=s;
 	}
