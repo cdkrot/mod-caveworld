@@ -37,11 +37,11 @@ public class GeneratorFoodChests extends AbstractChunkGenerator implements IChun
 			TileEntityChest tile = (TileEntityChest)w.getTileEntity(x, y+1, z);
 			
 			Item items[] = new Item[]
-					{Items.wheat, Items.wheat_seeds, Items.potato, Items.carrot,
-					Items.reeds, Items.pumpkin_seeds};
+					{Items.wheat, Items.wheat_seeds, Items.reeds,
+					Item.getItemFromBlock(Blocks.sapling), Item.getItemFromBlock(Blocks.cactus)};
 			int nums[] = new int[]
-					{rand.nextInt(8), rand.nextInt(4), rand.nextInt(4)==0?1:0, rand.nextInt(4)==0?1:0,
-					rand.nextInt(8)==0?(rand.nextInt(4)==0?2:1):0, rand.nextInt(8)==0?(rand.nextInt(8)==0?2:1):0};
+					{1+rand.nextInt(4), 2+rand.nextInt(2), rand.nextInt(4)==0?1:0,
+					rand.nextInt(2)+rand.nextInt(2), rand.nextInt(4)==0?1:0};
 			int inv_pos=0;
 			for (int j=0; j<items.length; j++)
 			{

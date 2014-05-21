@@ -32,7 +32,8 @@ public class GeneratorCavePostProduction extends AbstractChunkGenerator
 			for (int z=0; z<16; z++)
 			{
 				BiomeGenBase biome = BiomeGenBase.getBiome(w.getBiomeAt(x, z));
-				for (int y=220+AbstractChunkGenerator.makeCoordRandom(16*chunk_x+x, 16*chunk_z+z, seed).nextInt(4); y<256; y++)
+				Random r = AbstractChunkGenerator.makeCoordRandom(16*chunk_x+x, 16*chunk_z+z, seed);
+				for (int y=220+r.nextInt(4); y<255; y++)
 				{
 					if (!w.getBlock(x, y, z).isOpaqueCube()) //air and etc.
 						continue;
@@ -44,6 +45,12 @@ public class GeneratorCavePostProduction extends AbstractChunkGenerator
 					else
 						w.setBlock(x, y, z, biome.fillerBlock);
 				}
+				
+				for (int y=1; y<2+r.nextInt(8); y++)
+					w.setBlock(x, y, z, Blocks.bedrock);
+				for (int y=255; y>255-r.nextInt(8); y--)
+					w.setBlock(x, y, z, Blocks.bedrock);
+
 			}
 	}
 	

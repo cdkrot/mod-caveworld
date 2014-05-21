@@ -25,7 +25,7 @@ import org.apache.logging.log4j.Logger;
 public class ModCaveWorld
 {
 	public static final String modid = "cdkrot.caveworld";
-	public static final String version = "0.5.0";
+	public static final String version = "0.5.2";
 
 	@Mod.Instance(modid)
 	public static ModCaveWorld instance;
